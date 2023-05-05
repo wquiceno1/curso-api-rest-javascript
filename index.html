@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datos fornite</title>
+    <title>Random Cards</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #1A4A1C, #308834);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            font: normal 700 22px/1 "Barlow", sans-serif;
+            color: white;
+        }
+
+        h6 {
+            text-align: center;
+            font: normal 700 16px/1 "Barlow", sans-serif;
+            color: white;
+        }
+        .box-card {
+            /* background-color: white; */
+            /* padding: 2rem; */
+            border-radius: 8px;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 300px;
+            margin: 2rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img {
+            width: 100%;
+            max-width: 170px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Cartas Aleatorias</h1>
+    <div class="box-card">
+        <img id="random-card" alt="imagen de una carta aleatoria">
+
+    </div>
+    <input id="btn-play" type="button" value="Dame otra carta">
+    <h6 class="remaining-cards">Cartas restantes: </h6>
+
 </body>
+
+<script src="./main.js"></script>
 </html>
